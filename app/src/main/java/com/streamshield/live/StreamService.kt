@@ -167,7 +167,7 @@ class StreamService : Service(), ConnectCheckerRtmp {
                 128 * 1024, 44100, true, false, false
             )
             val videoPrepared = display.prepareVideo(
-                videoWidth, videoHeight, videoFps, bitrateKbps * 1000, 0
+                videoWidth, videoHeight, videoFps, bitrateKbps * 1000, 0, 320
             )
             if (audioPrepared && videoPrepared) {
                 display.startStream(rtmpUrl)
@@ -182,6 +182,8 @@ class StreamService : Service(), ConnectCheckerRtmp {
     }
 
     // ── ConnectCheckerRtmp ────────────────────────────────────────────────────
+
+    override fun onConnectionStartedRtmp(rtmpUrl: String) {}
 
     override fun onConnectionSuccessRtmp() {
         reconnectDelayMs = 2_000L
