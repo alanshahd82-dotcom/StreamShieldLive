@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">StreamShieldLive</string>
+    <string name="hint_rtmp_url">RTMP URL (e.g. rtmp://a.rtmp.youtube.com/live2)</string>
+    <string name="hint_stream_key">Stream Key</string>
+    <string name="btn_start_stream">Start Protected Stream</string>
+    <string name="btn_stop_stream">Stop Stream</string>
+    <string name="status_idle">Ready to stream</string>
+    <string name="status_connecting">Connecting…</string>
+    <string name="status_live">● LIVE</string>
+    <string name="status_disconnected">Disconnected</string>
+    <string name="status_reconnecting">Reconnecting…</string>
+    <string name="notif_channel_id">stream_service_channel</string>
+    <string name="notif_channel_name">Stream Service</string>
+    <string name="notif_title">StreamShieldLive</string>
+    <string name="permission_overlay_needed">Overlay permission is required. Tap to open settings.</string>
+    <string name="error_empty_fields">Please fill in the RTMP URL and Stream Key.</string>
+    <string name="label_resolution">Resolution</string>
+    <string name="label_fps">FPS</string>
+    <string name="label_bitrate">Bitrate: %1$d Mbps</string>
+    <string-array name="resolution_options">
+        <item>720p</item>
+        <item>1080p</item>
+    </string-array>
+    <string-array name="fps_options">
+        <item>24</item>
+        <item>30</item>
+        <item>60</item>
+    </string-array>
+</resources>
